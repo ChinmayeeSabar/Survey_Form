@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi-page Survey</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js" defer></script>
+  </head>
+  
+  <body>
+    <form action="https://formsubmit.co/a5ba4446aea026818ae016c59311f350" method="POST" class="form">
+      <h1 class="text-center">Survey Form</h1>
+      <!-- Progress bar -->
+      <div class="progressbar">
+        <div class="progress" id="progress"></div>
+        <div class="progress-step progress-step-active" data-title="Basic Info"></div>
+        <div class="progress-step" data-title="Contacts"></div>
+        <div class="progress-step" data-title="Address"></div>
+        <div class="progress-step" data-title="Password"></div>
+      </div>
+
+      <!-- Steps -->
+      <div class="form-step form-step-active">
+        <div class="input-group">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" required>
+        </div>
+        <div class="input-group">
+          <label for="occupation">Occupation</label>
+          <input type="text" name="occupation" id="occupation" required>
+        </div>
+        <div class="input-group">
+          <label for="dob">Date of Birth</label>
+          <input type="date" name="dob" id="dob" required>
+        </div>
+        <div class="input-group">
+          <label for="religion">Religion</label>
+          <select name="religion" id="religion">
+            <option value=" " id=" "></option>
+            <option value="Buddhism" id="B">Buddhism</option>
+            <option value="Christianity" id="C">Christianity</option>
+            <option value="Hinduism" id="H">Hinduism</option>
+            <option value="Islam" id="I">Islam</option>
+            <option value="Jainism" id="J">Jainism</option>
+            <option value="Sikhism" id="S">Sikhism</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
+        </div>
+      </div>
+
+      <div class="form-step">
+        <div class="input-group">
+          <label for="phone">Mobile No.</label>
+          <input type="number" name="mobile" id="mobile" required>
+        </div>
+        <div class="input-group">
+          <label for="phone">Alternative Mobile No.</label>
+          <input type="number" name="mobile_no" id="mobile_no" (optional)>
+        </div>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email" required>
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <a href="#" class="btn btn-next">Next</a>
+        </div>
+      </div>
+
+      <div class="form-step">
+        <div class="input-group">
+          <label for="country">Nationality</label>
+          <input type="text" name="country" id="country" required>
+        </div>
+        <div class="input-group">
+          <label for="ID">National ID</label>
+          <input type="number" name="ID" id="ID" required>
+        </div>
+        <div class="input-group">
+          <label for="address">Address</label>
+          <textarea cols="50" rows="5" value="address"></textarea>
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <a href="#" class="btn btn-next">Next</a>
+        </div>
+      </div>
+
+      <div class="form-step">
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" required>
+        </div>
+        <div class="input-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input
+            type="password" name="confirm_Password" id="confirm_Password" required>
+        </div>
+        <label for="message">Message</label>
+        <textarea id="message" cols="40" rows="8" placeholder="How can we help you ?"></textarea>
+        <div class="btns-group">
+        <a href="#" class="btn btn-prev">Previous</a>
+        <input type="submit" value="Submit" class="btn" onclick="submit">
+        </div>
+      </div>
+
+    </form>
+  </body>
+</html>
